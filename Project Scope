@@ -1,0 +1,17 @@
+Outline:
+  To make a simple game of pong that works on a keyboard
+Scope:
+  Make a game of pong using Javascript
+  Two players will play each other
+  Players will use the same keyboard
+  Each player will control a paddle
+  Player 1 will use 'W' and 'S' keys
+  Player 2 will use 'Up' and 'Down' keys
+  Will run on in a window
+  Will have a white background
+  Will have black paddles
+  Will have a red ball
+  Will have a ablitlity to pause a game
+  Will have a score counter for Player 1 and Player 2
+  Will have a rally counter
+  Will have a win state when a player score >= 10
