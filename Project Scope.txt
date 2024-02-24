@@ -11,7 +11,8 @@ Scope:
   Will have a white background
   Will have black paddles
   Will have a red ball
-  Will have a ablitlity to pause a game
+  Will have a ablity to pause a game
   Will have a score counter for Player 1 and Player 2
   Will have a rally counter
   Will have a win state when a player score >= 10
+ 
