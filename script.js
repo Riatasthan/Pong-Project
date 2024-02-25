@@ -26,6 +26,16 @@ const leftPlayer = {
     player: 'left',
     speed: 2
 }
+
+const rightPlayer = {
+    height: 100,
+    width: 10,
+    positionX: canvas.width - 10,
+    positionY: canvas.height / 2 - 100 / 2,
+    colour: 'white',
+    player: 'right',
+    speed: 2
+}
 /**
  * Game
  */
@@ -116,7 +126,7 @@ function drawBall() {
 }
 
 function drawAll() {
-    Context. clerarRect (0, 0, canvas.width, canvas.height);
+    Context.clearRect(0, 0, canvas.width, canvas.height);
     drawLeftPlayer()
     drawRightPlayer()
     drawBall()
