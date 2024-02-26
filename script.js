@@ -17,8 +17,10 @@ const ball ={
     colour: 'white'
 }
 
+const playerHeight = 100;
+
 const leftPlayer = {
-    height: 100,
+    height: playerHeight,
     width: 10,
     positionX: 10,
     positionY: canvas.height / 2 - 100 / 2,
@@ -28,7 +30,7 @@ const leftPlayer = {
 }
 
 const rightPlayer = {
-    height: 100,
+    height: playerHeight,
     width: 10,
     positionX: canvas.width - 10,
     positionY: canvas.height / 2 - 100 / 2,
@@ -36,6 +38,7 @@ const rightPlayer = {
     player: 'right',
     speed: 4
 }
+
 /**
  * Game
  */
@@ -44,7 +47,7 @@ const game = {
     rightScore: 0,
     turn: 0,
     topScore: 5,
-    speedIncreaseHit: 3,
+    speedIncreaseHit: 1,
 }
 
 const keyPressed = {
@@ -266,8 +269,8 @@ function updateStates() {
 
     if(hits === game.speedIncreaseHit){
         hits = 0
-        ball.velocityX += 0.2
-        ball.velocityY += 0.2
+        ball.velocityX = ball.velocityX > 0 ? ball.velocityX + 0.2 : ball.velocityX - 0.2
+        ball.velocityY = ball.velocityY > 0 ? ball.velocityY + 0.2 : ball.velocityY - 0.2
         leftPlayer.speed += 0.2
         rightPlayer.speed += 0.2
 
