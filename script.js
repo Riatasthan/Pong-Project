@@ -24,7 +24,7 @@ const leftPlayer = {
     positionY: canvas.height / 2 - 100 / 2,
     colour: 'white',
     player: 'left',
-    speed: 2
+    speed: 4
 }
 
 const rightPlayer = {
@@ -34,7 +34,7 @@ const rightPlayer = {
     positionY: canvas.height / 2 - 100 / 2,
     colour: 'white',
     player: 'right',
-    speed: 2
+    speed: 4
 }
 /**
  * Game
@@ -104,7 +104,7 @@ if (code === 'ArrowDown') {
  */
 function drawLeftPlayer() {
     Context.beginPath() ;
-    Context.fillSytle = leftPlayer.colour;
+    Context.fillStyle = leftPlayer.colour;
     Context.rect(leftPlayer.positionX, leftPlayer.positionY, leftPlayer.width, leftPlayer.height);
     Context.fill();
     Context.closePath();
@@ -112,14 +112,14 @@ function drawLeftPlayer() {
 
 function drawRightPlayer() {
     Context.beginPath();
-    Context.fillSytle = rightPlayer.colour;
+    Context.fillStyle = rightPlayer.colour;
     Context.rect(rightPlayer.positionX, rightPlayer.positionY, rightPlayer.width, rightPlayer.height);
     Context.fill();
     Context.closePath();
 }
 
 function drawBall() {
-    Context.fillSytle = ball.colour;
+    Context.fillStyle = ball.colour;
     Context.arc(ball.positionX, ball.positionY, ball.radius, 0, Math.PI * 2);
     Context.fill();
     Context.closePath;
