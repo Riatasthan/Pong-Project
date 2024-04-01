@@ -79,6 +79,9 @@ document.addEventListener('keydown', (event) => {
     if (code === 'ArrowDown') {
         keyPressed['Down'] = true;
     }
+    if (code === 'SpaceBar') {
+        keyPressed['Space'] = true;
+    }
 },false);
 
 

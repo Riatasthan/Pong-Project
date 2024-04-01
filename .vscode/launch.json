@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open Index.html",
-            "file": "c:\\Users\\liver\\source\\repos\\Pong-Project\\Index.html"
+            "file": "/Users/jdpearson/workspace/github.com/Riatasthan/Pong-Project/Index.html"
         }
     ]
 }
